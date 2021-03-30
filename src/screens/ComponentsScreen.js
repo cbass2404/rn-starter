@@ -2,22 +2,20 @@ import React from "react";
 import { useRef } from "react";
 import { Text, StyleSheet, View } from "react-native";
 
-const user = {
-    fName: "Cory",
-    lName: "Bass",
-};
-
 const ComponentsScreen = () => {
-    const introduction = (
-        <Text style={styles.subHeader}>My name is {user.fName}</Text>
-    );
+    const user = {
+        fName: "Cory",
+        lName: "Bass",
+    };
 
     return (
         <View>
             <Text style={styles.textStyle}>
                 Getting started with react native!
             </Text>
-            {introduction}
+            <Text style={styles.subHeaderStyle}>
+                My name is {user.fName} {user.lName}
+            </Text>
         </View>
     );
 };
@@ -26,7 +24,7 @@ const styles = StyleSheet.create({
     textStyle: {
         fontSize: 45,
     },
-    subHeader: {
+    subHeaderStyle: {
         fontSize: 20,
     },
 });
