@@ -2,10 +2,10 @@ import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 
 const ImageDetail = (props) => {
-    const { title } = props;
+    const { title, imageSource } = props;
     return (
         <View>
-            <Image source={require("../../assets/forest.jpg")} />
+            <Image source={imageSource} />
             <Text>{title}</Text>
         </View>
     );
