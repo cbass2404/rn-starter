@@ -1,5 +1,9 @@
 .idea
+.vscode
 node_modules
+# react native
+.expo
+.expo-shared
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
