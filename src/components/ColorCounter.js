@@ -5,7 +5,11 @@ const ColorCounter = ({ color, onIncrease, onDecrease, value }) => {
     return (
         <View>
             <Text>{color}</Text>
-            <Button title={`Increase ${color}`} onPress={() => onIncrease()} />
+            <Button
+                title={`Increase ${color}`}
+                onPress={() => onIncrease()}
+                disabled={value >= 255}
+            />
             <Button
                 title={`Decrease ${color}`}
                 onPress={() => onDecrease()}
