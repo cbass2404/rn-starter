@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
-import { set } from "react-native-reanimated";
 
 const CounterScreen = () => {
     const [counter, setCounter] = useState(0);
