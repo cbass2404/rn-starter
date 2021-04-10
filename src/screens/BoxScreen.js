@@ -17,26 +17,22 @@ const styles = StyleSheet.create({
     viewStyle: {
         borderWidth: 3,
         borderColor: "black",
-        height: 200,
+        height: 206,
         flexDirection: "row",
         justifyContent: "space-between",
     },
     boxStyle: {
         height: 100,
         width: 100,
-        borderWidth: 3,
     },
     textOneStyle: {
-        borderColor: "red",
         backgroundColor: "red",
     },
     textTwoStyle: {
-        borderColor: "green",
         backgroundColor: "green",
         alignSelf: "flex-end",
     },
     textThreeStyle: {
-        borderColor: "purple",
         backgroundColor: "purple",
     },
 });
